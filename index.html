@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="Dental Arts Clinic Lebanon - Professional dental care by Dr. Wissam M. Sinno. Stomatologist and Orthodontist in Beirut, Lebanon. Book your appointment today.">
+    <meta name="keywords" content="dentist Lebanon, dental clinic Beirut, Dr. Wissam Sinno, orthodontist Lebanon, stomatologist Beirut, dental implants Lebanon, cosmetic dentistry Beirut">
+    <meta name="author" content="Dental Arts Clinic Lebanon">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dentalartsclinic.com/">
+    <meta property="og:title" content="Dental Arts Clinic Lebanon | Dr. Wissam M. Sinno">
+    <meta property="og:description" content="Professional dental care in Beirut, Lebanon. Stomatologist and Orthodontist services.">
+    <meta property="og:image" content="https://dentalartsclinic.com/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_LB">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dental Arts Clinic Lebanon | Dr. Wissam M. Sinno">
+    <meta name="twitter:description" content="Professional dental care in Beirut, Lebanon">
+    <meta name="twitter:image" content="https://dentalartsclinic.com/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dentalartsclinic.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <title>Dental Arts Clinic Lebanon | Dr. Wissam M. Sinno | Stomatologist & Orthodontist</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Dental Arts Clinic",
+        "image": "https://dentalartsclinic.com/logo.jpg",
+        "description": "Professional dental care services in Beirut, Lebanon",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Beirut",
+            "addressCountry": "LB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.8938",
+            "longitude": "35.5018"
+        },
+        "url": "https://dentalartsclinic.com",
+        "telephone": "+96181818983",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Wednesday", "Saturday"],
+                "opens": "09:00",
+                "closes": "13:00"
+            }
+        ],
+        "medicalSpecialty": ["Stomatology", "Orthodontics"],
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Wissam M. Sinno",
+            "jobTitle": "Stomatologist & Orthodontist"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Dental Arts Clinic</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home" aria-label="Home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about" aria-label="About Us">About</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav.services" aria-label="Our Services">Services</a></li>
+                    <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery" aria-label="Gallery">Gallery</a></li>
+                    <li><a href="#location" class="nav-link" data-i18n="nav.location" aria-label="Location">Location</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact" aria-label="Contact Us">Contact</a></li>
+                    <li><a href="#appointment" class="nav-link btn-appointment" data-i18n="nav.appointment" aria-label="Book Appointment">Book Appointment</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button id="langToggle" class="lang-btn" aria-label="Toggle language" aria-pressed="false" title="Switch to Arabic">
+                        <i class="fas fa-language"></i>
+                        <span id="langText">AR</span>
+                    </button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Welcome to Dental Arts Clinic</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Excellence in Dental Care</p>
+                <p class="hero-doctor" data-i18n="hero.doctor">Dr. Wissam M. Sinno</p>
+                <p class="hero-location" data-i18n="hero.location">Lebanon</p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary" data-i18n="hero.bookAppointment" aria-label="Book an appointment">Book Appointment</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero.ourServices" aria-label="View our services">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about.title">About Us</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Your Trusted Dental Care Partner</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-i18n="hero.doctor">Dr. Wissam M. Sinno</h3>
+                    <div class="specializations">
+                        <span class="specialization-badge">STOMATOLOGIST</span>
+                        <span class="specialization-badge">ORTHODONTIST</span>
+                    </div>
+                    <p data-i18n="about.description1">With years of experience in dental care, Dr. Wissam M. Sinno leads Dental Arts Clinic with a commitment to excellence and patient satisfaction. Our clinic combines advanced dental technology with compassionate care to provide you with the best dental experience.</p>
+                    <p data-i18n="about.description2">We believe in creating beautiful, healthy smiles while ensuring your comfort throughout every visit. Our team is dedicated to providing personalized treatment plans tailored to your unique needs.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                            <span data-i18n="about.expertCare">Expert Care</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
+                            <span data-i18n="about.experiencedTeam">Experienced Team</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-microscope" aria-hidden="true"></i>
+                            <span data-i18n="about.advancedTech">Advanced Technology</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                            <span data-i18n="about.compassionate">Compassionate Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">Comprehensive Dental Care Solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.general">General Dentistry</h3>
+                    <p data-i18n="services.generalDesc">Routine checkups, cleanings, and preventive care to keep your smile healthy and bright.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.cosmetic">Cosmetic Dentistry</h3>
+                    <p data-i18n="services.cosmeticDesc">Teeth whitening, veneers, and smile makeovers to enhance your natural beauty.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.implants">Dental Implants</h3>
+                    <p data-i18n="services.implantsDesc">Permanent tooth replacement solutions that look and feel like natural teeth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.orthodontics">Orthodontics</h3>
+                    <p data-i18n="services.orthodonticsDesc">Braces and aligners to straighten teeth and correct bite issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.rootCanal">Root Canal Treatment</h3>
+                    <p data-i18n="services.rootCanalDesc">Pain-free root canal therapy to save infected teeth and restore oral health.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth-open" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.surgery">Oral Surgery</h3>
+                    <p data-i18n="services.surgeryDesc">Expert surgical procedures including extractions and wisdom tooth removal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="gallery.title">Our Clinic</h2>
+                <p class="section-subtitle" data-i18n="gallery.subtitle">Modern Facilities for Your Comfort</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-clinic-medical"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="appointment.title">Book Your Appointment</h2>
+                <p class="section-subtitle" data-i18n="appointment.subtitle">Schedule a visit with us today</p>
+            </div>
+            <div class="appointment-content">
+                <div class="appointment-form">
+                    <form id="appointmentForm" aria-label="Appointment booking form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user" aria-hidden="true"></i> <span data-i18n="appointment.fullName">Full Name</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-required="true" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone" aria-hidden="true"></i> <span data-i18n="appointment.phone">Phone Number</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" aria-required="true" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="service"><i class="fas fa-list" aria-hidden="true"></i> <span data-i18n="appointment.service">Service Needed</span></label>
+                            <select id="service" name="service" required aria-required="true" aria-label="Select service">
+                                <option value="" data-i18n="appointment.selectService">Select a service</option>
+                                <option value="General Dentistry">General Dentistry</option>
+                                <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                                <option value="Dental Implants">Dental Implants</option>
+                                <option value="Orthodontics">Orthodontics</option>
+                                <option value="Root Canal Treatment">Root Canal Treatment</option>
+                                <option value="Oral Surgery">Oral Surgery</option>
+                                <option value="Consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="appointment.date">Preferred Date</span></label>
+                            <input type="date" id="date" name="date" required aria-required="true" aria-label="Select preferred date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time"><i class="fas fa-clock" aria-hidden="true"></i> <span data-i18n="appointment.time">Preferred Time</span></label>
+                            <select id="time" name="time" required aria-required="true" aria-label="Select preferred time">
+                                <option value="" data-i18n="appointment.selectTime">Select time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment" aria-hidden="true"></i> <span data-i18n="appointment.notes">Additional Notes</span></label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any additional information or special requests" aria-label="Additional notes or special requests" data-i18n-placeholder="appointment.notesPlaceholder"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" aria-label="Submit appointment form via WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="appointment.bookWhatsApp">Book via WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="appointment-info">
+                    <h3 data-i18n="appointment.contactInfo">Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <strong data-i18n="appointment.phoneLabel">Phone</strong>
+                            <p><a href="tel:+96181818983" style="color: var(--primary-color); text-decoration: none;" aria-label="Call +961 81818983">+961 81818983</a></p>
+                            <p><a href="tel:+96101305308" style="color: var(--primary-color); text-decoration: none;" aria-label="Call +961 01305308">+961 01305308</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <strong data-i18n="appointment.hours">Working Hours</strong>
+                            <p data-i18n="appointment.monTue">Monday - Tuesday: 9:00 AM - 6:00 PM</p>
+                            <p data-i18n="appointment.wed">Wednesday: 9:00 AM - 1:00 PM</p>
+                            <p data-i18n="appointment.thuFri">Thursday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p data-i18n="appointment.sat">Saturday: 9:00 AM - 1:00 PM</p>
+                            <p data-i18n="appointment.sun">Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <div>
+                            <strong data-i18n="appointment.whatsapp">WhatsApp</strong>
+                            <p data-i18n="appointment.chatDirect">Chat with us directly</p>
+                            <a href="#" class="btn btn-whatsapp" id="whatsappAppointment" style="margin-top: 0.75rem; display: inline-block;" aria-label="Start WhatsApp chat">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="appointment.startChat">Start Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="location.title">Find Us</h2>
+                <p class="section-subtitle" data-i18n="location.subtitle">Visit Dental Arts Clinic in Beirut, Lebanon</p>
+            </div>
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Dental+Arts+Clinic+Dr.+Wissam+Sinno+Beirut+Lebanon&output=embed&hl=en&z=16"
+                        width="100%" 
+                        height="500" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Dental Arts Clinic Location"
+                        aria-label="Interactive map showing Dental Arts Clinic location">
+                    </iframe>
+                    <div style="margin-top: 1rem; text-align: center;">
+                        <a href="https://share.google/jiD5zYXw9h6dqDapv" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;" aria-label="View full map on Google Maps">
+                            <i class="fas fa-map" aria-hidden="true"></i> <span data-i18n="location.viewMap">View Full Map</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="location-info">
+                    <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dental Arts Clinic</h3>
+                    <p><strong data-i18n="hero.doctor">Dr. Wissam M. Sinno</strong></p>
+                    <p data-i18n="hero.location">Beirut, Lebanon</p>
+                    <div class="location-buttons">
+                        <a href="https://share.google/jiD5zYXw9h6dqDapv" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Get directions to clinic">
+                            <i class="fas fa-directions" aria-hidden="true"></i> <span data-i18n="location.getDirections">Get Directions</span>
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Dental+Arts+Clinic+Dr.+Wissam+Sinno+Beirut" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Open location in Google Maps">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="location.openMaps">Open in Maps</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">We're here to help with all your dental needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+                    <p data-i18n="contact.chatDirect">Chat with us directly</p>
+                    <a href="#" class="btn btn-whatsapp" id="whatsappDirect" aria-label="Start WhatsApp chat">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="appointment.startChat">Start Chat</span>
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <h3 data-i18n="contact.callUs">Call Us</h3>
+                    <p data-i18n="contact.speakTeam">Speak with our team</p>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+                        <a href="tel:+96181818983" class="btn btn-primary" style="width: 100%;" aria-label="Call +961 81818983">+961 81818983</a>
+                        <a href="tel:+96101305308" class="btn btn-primary" style="width: 100%;" aria-label="Call +961 01305308">+961 01305308</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <h3 data-i18n="contact.location">Location</h3>
+                    <p data-i18n="contact.findMaps">Find us on Google Maps</p>
+                    <a href="https://share.google/jiD5zYXw9h6dqDapv" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="View clinic location on Google Maps">
+                        <span data-i18n="contact.viewMap">View Map</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dental Arts Clinic</h3>
+                    <p>Providing exceptional dental care in Lebanon</p>
+                    <div class="social-links">
+                        <a href="#" id="whatsappFooter" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Dentistry</a></li>
+                        <li><a href="#services">Cosmetic Dentistry</a></li>
+                        <li><a href="#services">Dental Implants</a></li>
+                        <li><a href="#services">Orthodontics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://share.google/jiD5zYXw9h6dqDapv" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">View on Google Maps</a></li>
+                        <li><i class="fas fa-phone"></i> +961 81818983</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dental Arts Clinic Lebanon. All rights reserved. | Dr. Wissam M. Sinno</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Book Appointment</span>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
